@@ -1,0 +1,337 @@
+body {
+  background: url(https://trade.m.xiaomiyoupin.com/youpin/static/m/res/images/common/bg_page_header.png) no-repeat;
+  background-size: 100% auto;
+  background-color: #f4f4f4;
+}
+
+/* 顶部区域 */
+header {
+  height: 0.88rem;
+  line-height: 0.88rem;
+  position: relative;
+  text-align: center;
+}
+
+header img {
+  width: 0.42rem;
+  height: 0.42rem;
+  left: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+header .title {
+  color: #fff;
+  font-size: 0.20rem;
+  font-weight: bold;
+  position: relative;
+  top: -0.28rem;
+}
+
+header .edit {
+  width: 0.50rem;
+  height: 0.50rem;
+  line-height: 0.50rem;
+  color: #fff;
+  font-size: 0.14rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0.10rem;
+}
+
+/* 购物车模块 */
+.car-wrap {
+  margin: 0 0.10rem;
+  border-radius: 0.10rem;
+  background-color: #fff;
+  padding-bottom: 0.10rem;
+}
+
+.car-wrap .top {
+  padding: 0 0.10rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  position: relative;
+}
+
+.car-wrap .top .circle {
+  display: inline-block;
+  width: 0.18rem;
+  height: 0.18rem;
+  background-color: red;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  background: url(https://trade.m.xiaomiyoupin.com/youpin/static/m/res/images/icons/icon_checkbox_uncheck_darkgray.png);
+  background-size: 100%;
+}
+
+.car-wrap .top .title {
+  margin-left: 0.25rem;
+  font-size: 0.14rem;
+  position: relative;
+  top: -0.32rem;
+}
+
+.car-wrap .top .fr {
+  font-size: 0.12rem;
+  color: #666;
+}
+
+.car-wrap .top .fr img {
+  width: 0.12rem;
+  height: 0.12rem;
+  position: relative;
+  top: 0.02rem;
+}
+
+.car-wrap .top .fr span {
+  color: #bf1111;
+}
+
+.car-wrap li {
+  height: 1.04rem;
+  margin-bottom: 0.10rem;
+  padding-left: 0.10rem;
+  position: relative;
+}
+
+.car-wrap li .circle {
+  width: 0.18rem;
+  height: 0.18rem;
+  background: url(https://trade.m.xiaomiyoupin.com/youpin/static/m/res/images/icons/icon_checkbox_uncheck_darkgray.png);
+  background-size: 100%;
+  position: absolute;
+  left: 0.10rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.car-wrap li .img {
+  width: 0.86rem;
+  height: 0.86rem;
+  position: absolute;
+  left: 0.40rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-top: 0.10rem;
+  border-radius: 0.04rem;
+}
+
+.car-wrap li img {
+  width: 100%;
+  height: 100%;
+}
+
+.car-wrap li .fr {
+  width: 2.05rem;
+  margin-top: 0.15rem;
+  font-size: 0.14rem;
+  margin-right: 0.10rem;
+}
+
+.car-wrap li .special-price {
+  border: 0.01rem solid #bf1111;
+  border-radius: 0.10rem;
+  padding: 0 0.05rem;
+  color: #bf1111;
+  font-size: 0.12rem;
+}
+
+.car-wrap li div {
+  margin-top: 0.10rem;
+}
+
+.car-wrap li .price {
+  color: #bf1111;
+  font-size: 0.15rem;
+}
+
+.car-wrap li .frr {
+  float: right;
+  margin-top: -0.01rem;
+  font-size: 0.15rem;
+  font-weight: bold;
+}
+
+.car-wrap li input.number {
+  width: 0.30rem;
+  height: 0.20rem;
+  text-align: center;
+  margin: 0 0.05rem;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.car-wrap li .sub {
+  color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.20rem;
+  height: 0.20rem;
+  line-height: 0.20rem;
+  text-align: center;
+}
+
+.car-wrap li .add {
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.20rem;
+  height: 0.20rem;
+  line-height: 0.20rem;
+  text-align: center;
+}
+
+/* 为你推荐 */
+.foryou-wrap {
+  height: 0.42rem;
+  margin-bottom: 0.10rem;
+  margin-top: 0.10rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.foryou-wrap span {
+  font-size: 0.15rem;
+  color: #333;
+  padding: 0 0.08rem;
+  font-weight: bold;
+}
+
+.foryou-wrap img {
+  width: 0.18rem;
+  height: 0.18rem;
+  vertical-align: middle;
+}
+
+/* 为你推荐商品 */
+main {
+  margin-bottom: 0.55rem;
+}
+
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main li {
+  width: 1.725rem;
+  height: 2.555rem;
+  border-radius: 0.06rem;
+  background-color: #fff;
+  margin: 0 0 0.10rem 0.10rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+main li img {
+  width: 1.725rem;
+  height: 1.725rem;
+  border-top-left-radius: 0.06px;
+  border-top-right-radius: 0.06px;
+}
+
+main li .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.15rem;
+  color: #333;
+  margin: 0 0.05rem;
+  margin-top: -0.2rem;
+}
+
+main li .desc {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.13rem;
+  color: #999;
+  margin: 0.02rem 0.05rem;
+  margin-bottom: 0.08rem;
+}
+
+main li .symbol {
+  color: #bf1111;
+  font-size: 0.12rem;
+  margin-left: 0.05rem;
+  position: relative;
+  top: -0.85rem;
+}
+
+main li .price {
+  color: #bf1111;
+  font-size: 0.17rem;
+  position: relative;
+  top: -0.85rem;
+}
+
+main li .special-price {
+  color: #fff;
+  padding: 0 0.05rem;
+  position: absolute;
+  background-color: #d96b6c;
+  left: 0;
+  top: 1.57rem;
+  font-size: 0.12rem;
+}
+
+/* 底部区域 */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 0.54rem;
+  font-size: 0.13rem;
+  line-height: 0.54rem;
+  background-color: #fff;
+  border-top: 0.01rem solid #d6d6d6;
+}
+
+footer .circle {
+  display: inline-block;
+  width: 0.18rem;
+  height: 0.18rem;
+  top: 50%;
+  left: 0.10rem;
+  position: absolute;
+  transform: translateY(-50%);
+  background: url(https://trade.m.xiaomiyoupin.com/youpin/static/m/res/images/icons/icon_checkbox_uncheck_darkgray.png);
+  background-size: 100%;
+}
+
+footer .all {
+  margin-left: 0.35rem;
+  color: #333;
+}
+
+footer .heji {
+  color: rgba(0, 0, 0, 0.902);
+  font-weight: bold;
+}
+
+footer .count {
+  color: #bf1111;
+  font-size: 0.15rem;
+}
+
+footer .jiesuan {
+  display: inline-block;
+  width: 0.96rem;
+  height: 0.38rem;
+  line-height: 0.38rem;
+  margin-top: -0.04rem;
+  border-radius: 0.19rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 0.08rem;
+  margin-left: 0.03rem;
+  font-size: 0.15rem;
+  background: linear-gradient(to right, rgb(240, 78, 46), rgb(213, 16, 16));
+  vertical-align: middle;
+}

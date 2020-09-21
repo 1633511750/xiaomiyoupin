@@ -1,0 +1,412 @@
+body {
+  background-color: #fff2d0;
+}
+
+/* 头部区域 */
+header {
+  height: 0.44rem;
+}
+
+.header-wrap {
+  width: 3.75rem;
+  height: 0.44rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0 0.10rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.01rem solid #999;
+  position: fixed;
+  z-index: 100;
+}
+
+header .left-arrow-wrap {
+  width: 0.44rem;
+  height: 0.32rem;
+}
+
+header .left-arrow {
+  width: 0.32rem;
+  height: 0.32rem;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAA0RJREFUeAHtl8trE1EUxjupJC5cuE0WbkTRjSAJIqGImHVUfERbKChiEqMuFVFbU7U+cBnEGCiim2Jso/Vdm2I2goTkvxCyc5MEfOThd5I5ZXaxwXvvgOfCzDlzmcm53++c+8jIiDQhIASEgBAQAkJACAgBISAEhIAQEAJC4H8jYLlNcCqVCnc6nS24FnO53G/V4/OoDrCe34/H41dbrdYXiJ/Hd+fX8+2w77oGQDKZvAYRs8MKGfY7VwBA5qeQ9dsOEcVAIJB1PCtzjQNIJBLTUHeTFVqWtQLx0XQ6/YP7VFqjAJD5G91ud8Yh8JPf7z+oSzzFNQYAcz6N+HT1GjK/jMwf0imeAhvZBpF5KvmpnnIahGV99Hq9hzOZzE/u02W1VwDm/C2Ic4p/b0o8QdZaAcg8rfS03XF75/P5jprIPA9AWwUg83cQdE08yv4t5vwRk+IJgpYKQObvItYVCkgN4t9gtT+GBe9Xv8fcXXkFIPP3IG9NPPzXbhFP2JVWADJ/HzEuUyBqyPwS9v3jOv7k9CMOvo8OfmW4N5D5B/jykuPrV/BjbhJPY1NSATjkHMDZfpXFI/MvkfkTbhNP41OyBkDsZhZv229uFK8MQCQSWULWFxgCgFzElHgIq6TiOM4wVkkFxGKxNlb6cUB4zoOC+BQgPHIbBKUZyefzo8Vi8RkgTDAIQJkDnDjOAB3uM2mVVAALokrAaW8SoglCr6ECztRqtTkAUBqb4w2yygdBmUbGTwPCEx4MIJwChKdUIdxnyiqdAk5RNPexPT6GPcv9gDKPBXOSKoX7dFttAEgYQaDdAO45h9AXmCYTqJSWo0+bqxUAq8IROQP/Aj+jEgqAc9LEWcHIHKxWqx9CoRAdlvbaEHYCwq5oNFoolUpap4MRACQaEJYBYRPcsA1hR6PR2B0OhwvlclkbBGMAbAgrwWBwI/wxG8L2drsdRCUsohK0rAlGAdgQVlEJG+DvsyFsq9frewBhQQcE4wBsCJ9RCeTupxva1maz+b1SqXztP6q7Kz8I/e3QsQPMeDye6/w+/k532VdpXQOARGaz2VlAGMM1jkc6L0gTAkJACAgBISAEhIAQEAJCQAgIASEgBITAPyfwB5PYEFJ6KY3xAAAAAElFTkSuQmCC) no-repeat;
+  background-size: contain;
+}
+
+header .title {
+  width: 2.66rem;
+  height: 0.24rem;
+  line-height: 0.24rem;
+  text-align: center;
+  font-size: 0.18rem;
+}
+
+/* 9.9品质推荐 */
+.quality-tuijian {
+  width: 100%;
+  height: 1.49rem;
+}
+
+.quality-tuijian img {
+  width: 100%;
+  height: 1.39rem;
+}
+
+/* 导航 */
+nav {
+  height: 0.44rem;
+  margin-bottom: 0.05rem;
+  padding: 0 0.10rem;
+  position: relative;
+}
+
+nav .content {
+  width: calc(100% - 0.20rem);
+  height: 100%;
+  border-radius: 0.04rem;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  /* display: none; */
+}
+
+nav .content ul {
+  width: 200%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+nav .content li {
+  width: 0.885rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  text-align: center;
+  font-size: 0.15rem;
+  color: #939393;
+}
+
+nav .content li.active {
+  color: #ac6000;
+  display: flex;
+  justify-content: center;
+}
+
+nav .content li.active div {
+  height: inherit;
+  box-sizing: border-box;
+  width: 0.7161rem;
+  border-bottom: medium solid #ac6000;
+}
+
+nav .right {
+  width: 0.50rem;
+  height: 0.44rem;
+  background-color: #fff;
+  position: absolute;
+  right: 0.10rem;
+  top: 0;
+  border-radius: 0.04rem;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+nav .right .inner {
+  width: 0.43rem;
+  height: 0.13rem;
+  margin-left: 0.05rem;
+  border-left: 0.01rem solid #979797;
+  text-align: center;
+  position: relative;
+}
+
+nav .right .inner img {
+  height: 0.20rem;
+  position: absolute;
+  top: -0.03rem;
+  right: 0.12rem;
+}
+
+nav .toggle {
+  width: calc(100% - 0.20rem);
+  height: 300%;
+  line-height: 0.44rem;
+  background-color: #fff;
+  border-radius: 0.04rem;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+nav .toggle .title {
+  font-size: 0.13rem;
+  color: #999;
+  margin-left: 0.10rem;
+}
+
+nav .toggle ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav .toggle ul li {
+  width: 1.18rem;
+  height: 0.40rem;
+  text-align: center;
+  font-size: 0.15rem;
+  color: #939393;
+}
+
+nav .toggle ul li:first-of-type {
+  color: #ac6000;
+  display: flex;
+  justify-content: center;
+}
+
+nav .toggle ul li:first-of-type div {
+  width: 0.7161rem;
+  border-bottom: medium solid #ac6000;
+}
+
+/* 新人必Buy */
+.must-buy-wrap {
+  width: 3.55rem;
+  height: 2.45rem;
+  margin: 0 auto;
+  margin-bottom: 0.10rem;
+  background: url(https://img.youpin.mi-img.com/jianyu/6f76276963dbd56eee01e9da06670357.png@base@tag=imgScale&h=490&m=1&q=80) no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.lbt-wrap {
+  width: 3.39rem;
+  height: 1.90rem;
+  margin: 0 auto;
+  /* background-color: #fffa; */
+  overflow: hidden;
+  position: relative;
+}
+
+.lbt-wrap ul {
+  width: 11.3rem;
+  position: absolute;
+  left: -1.13rem;
+  top: 0;
+}
+
+.lbt-wrap li {
+  width: 1.13rem;
+  height: 1.65rem;
+  float: left;
+}
+
+.lbt-wrap li.active img {
+  transform: scale(1);
+}
+
+.lbt-wrap li img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  transform: scale(0.9);
+}
+
+.lbt-wrap dl {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 0.10rem;
+}
+
+.lbt-wrap dl dd {
+  width: 0.07rem;
+  height: 0.07rem;
+  border-radius: 50%;
+  background-color: rgba(166, 166, 166, 0.4);
+  margin-right: 0.05rem;
+}
+
+.lbt-wrap dl dd.active {
+  background-color: #a6a6a6;
+}
+
+.lbt-wrap dl dd:last-of-type {
+  margin-right: 0;
+}
+
+/* 广告 */
+.ad-wrap {
+  height: 0.83rem;
+}
+
+.ad-wrap img {
+  width: 100%;
+  vertical-align: top;
+}
+
+/* 包邮 */
+
+.free-shipping-wrap {
+  height: 0.46rem;
+  padding: 0 0.075rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.free-shipping-wrap>div {
+  height: 100%;
+  line-height: 0.46rem;
+  margin-top: -0.56rem;
+}
+
+.free-shipping img {
+  width: 0.46rem;
+  height: 0.46rem;
+  display: flex;
+  object-fit: contain;
+}
+
+.free-shipping .free-shipping-wrap>div>span {
+  color: #d9800f;
+  font-size: 0.16rem;
+  font-weight: bold;
+  padding: 0 0.075rem;
+}
+
+.free-shipping ul {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.free-shipping .item {
+  width: 1.15rem;
+  height: 1.91rem;
+  margin: 0 0 0.05rem 0.05rem;
+  background-color: #fff;
+  border-radius: 0.05rem;
+  position: relative;
+}
+
+.free-shipping .item:nth-of-type(3n+1) {
+  margin-left: 0.09rem;
+}
+
+.free-shipping .item img {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.free-shipping .item .info {
+  margin-left: 0.05rem;
+  margin-top: 0.05rem;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.free-shipping .item .new-person-price {
+  background-color: #f94d4d;
+  width: 0.40rem;
+  text-align: center;
+  margin: 0.05rem 0 0 0.05rem;
+  color: #fff;
+}
+
+.free-shipping .item .price-wrap {
+  margin-top: 0.05rem;
+  margin-left: 0.05rem;
+}
+
+.free-shipping .item .red {
+  color: #d64d3b;
+}
+
+.free-shipping .item .price {
+  font-size: 0.15rem;
+}
+
+.free-shipping .item .price-del {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.free-shipping .item .comment {
+  padding: 0.03rem;
+  border: 0.01rem solid #f2e7d6;
+  border-left: 0rem;
+  position: absolute;
+  left: 0;
+  top: 0.95rem;
+  background-color: #fef7e0;
+  color: #be7502;
+}
+
+/* 新人首单全额返 */
+.fan ul {
+  display: flex;
+}
+
+.fan .fan-item {
+  width: 1.72rem;
+  height: 2.58rem;
+  margin: 0 0 0.10rem 0.10rem;
+  background-color: #fff;
+  border-radius: 0.06rem;
+}
+
+.fan .fan-item img {
+  width: 1.72rem;
+  height: 1.72rem;
+}
+
+.fan .fan-item .name {
+  font-size: 0.15rem;
+  color: #333;
+  margin: 0.05rem 0.10rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fan .fan-item .desc {
+  color: #999;
+  font-size: 0.13rem;
+  margin: 0 0.10rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fan .fan-item .price-wrap {
+  margin-top: -0.7rem;
+}
+
+.fan .fan-item .symbol {
+  font-size: 0.12rem;
+  color: #999;
+  margin-left: 0.10rem;
+}
+
+.fan .fan-item .price {
+  font-size: 0.17rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.fan .fan-item .all-fan {
+  color: red;
+  margin-left: -0.20rem;
+  font-size: 0.10rem;
+  border: 0.01rem solid red;
+  display: inline-block;
+  border-radius: 0.05rem;
+  padding: 0.01rem 0.03rem;
+}

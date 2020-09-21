@@ -1,0 +1,43 @@
+/* 初始化样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+html {
+  font-size: 26.6667vw;
+  /* 1px === 1rem */
+}
+
+
+.fs12 {
+  font-size: 0.12rem;
+}
+
+
+/* 隐藏谷歌内核的浏览器的滚动条 */
+body::-webkit-scrollbar {
+  width: 0px;
+}
